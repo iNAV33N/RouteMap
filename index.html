@@ -69,7 +69,7 @@
     if(lat == "" || long == "" || place == ""){
       alert("Please fill all inputs.");
     }else{
-        var genLink = `https://inav33n.github.io/RouteMap/map.html?lat=${lat}&long=${long}&place=${place}`
+        var genLink = `https://inav33n.github.io/RouteMap/map.html?lat=${lat}&long=${long}&title=${place}`
         c1.classList.add("hide");
         c2.innerHTML = `<a id="sUrl" href="${genLink}" style="color:black;text-decoration:none;font-weight: bold;font-size: 15px;">${genLink}</a><br><a href="https://bitly.com/">Use bitly.com to shorten URL.</a><br><br><input type="button" value="Copy Link" onclick="copyURL()">`;
         c2.classList.remove("hide");
