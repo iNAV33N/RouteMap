@@ -55,8 +55,8 @@
         return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
 
-    var urlLat = parseInt(getParameterByName('lat'));
-    var urlLong = parseInt(getParameterByName('long'));
+    var urlLat = parseFloat(getParameterByName('lat'));
+    var urlLong = parseFloat(getParameterByName('long'));
     var urlTitle = getParameterByName('title');
     //console.log(`URL: ${window.location.href}\nLat: ${typeof urlLat}\nLong:${typeof urlLong}\nTitle:${typeof urlTitle}`);
     function initMap() {
